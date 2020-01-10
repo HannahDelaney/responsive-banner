@@ -1,1 +1,54 @@
+body {
+  font-family: Georgia, serif;
+  color: #fff;
+}
 
+a {
+  text-decoration: none;
+}
+
+.btn-ghost {
+  border: solid 3px #97a49b;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  background-color: #fff;
+  border: solid 3px #fff;
+  color: #495562;
+}
+
+.content {
+  background-color: #495562;
+}
+
+.banner-img {
+  max-height: 500px;
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 1rem;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
+  }
+
+  .unit-content-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .unit-content-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+}
