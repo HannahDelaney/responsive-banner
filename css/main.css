@@ -1,4 +1,4 @@
-body {
+html {
   font-family: Georgia, serif;
   color: #fff;
 }
@@ -19,26 +19,11 @@ a {
   color: #495562;
 }
 
-.content {
+.content-wrapper {
   background-color: #495562;
 }
 
-.banner-img {
-  max-height: 500px;
-}
-
-@media only screen and (min-width: 60em) {
-
-  img {
-    position: relative;
-  }
-
-  .content {
-    position: absolute;
-    bottom: 1rem;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
-  }
+@media only screen and (min-width: 38em) {
 
   .unit-content-left {
     justify-content: flex-start;
@@ -49,6 +34,33 @@ a {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .earth {
+    position: relative;
+  }
+
+  .banner-img {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .btn-ghost {
+    border: solid 3px #efefef;
+    border-radius: 5px;
+    color: #efefef;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
   }
 
 }
